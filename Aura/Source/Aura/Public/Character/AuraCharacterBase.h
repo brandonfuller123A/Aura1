@@ -25,8 +25,12 @@ public:
 	UAttributeSet* GetAttributeSet() const { return AttributeSet; }
 	
 	virtual UAnimMontage* GetHitReactMontage_Implementation() override;
+	virtual void Die() override;
 	
 	virtual void BeginPlay() override;
+	
+	UFUNCTION(NetMulticast, Reliable)
+	virtual void MulticastHandleDeath();
 	
 protected:
 	UPROPERTY(EditAnywhere, Category = "Combat")

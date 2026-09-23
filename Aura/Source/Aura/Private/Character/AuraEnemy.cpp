@@ -38,6 +38,12 @@ void AAuraEnemy::UnHighlightActor()
 	Weapon->SetRenderCustomDepth(false);
 }
 
+void AAuraEnemy::Die()
+{
+	SetLifeSpan(LifeSpan);
+	Super::Die();
+}
+
 int32 AAuraEnemy::GetPlayerLevel()
 {
 	return Level;
