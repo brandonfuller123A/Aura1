@@ -129,11 +129,13 @@ void UAuraAttributeSet::ShowFloatingText(const FEffectProperties& Props, float D
 {
 	if (Props.SourceCharacter != Props.TargetCharacter)
 	{
-		if (AAuraPlayerController* PC = Cast<AAuraPlayerController>(UGameplayStatics::GetPlayerController(Props.SourceCharacter, 0)))
+		if (AAuraPlayerController* PC = Cast<AAuraPlayerController>(Props.SourceCharacter->Controller));
 		{
-			//TODO: Need to find and the function ShowDamageNumber at the end of the course to
-			//TODO: create the animation floating text
-			//PC->ShowDamageNumber(Damage, Props.TargetCharacter);
+			//TODO locate the ShowDamage function in previous episodes to complete the data for this
+			//TODO method and test to confirm runtime bugs are error free, then complete the segment
+			//TODO in video lecture 162 Multiplayer Test
+			//TODO at time stamp from the video 12:27
+			//PC->ShowDamageNumber(Damage, Props.TargetCharacter, bBlockedHit, bCriticalHit);
 		}
 	}
 }
