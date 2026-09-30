@@ -151,6 +151,10 @@ public:
 	ATTRIBUTE_ACCESSORS(UAuraAttributeSet, PhysicalResistance);
 	
 	/*
+	 * Resistance Attributes
+	 */
+	
+	/*
 	 * Vital Attributes 
 	 */
 	
