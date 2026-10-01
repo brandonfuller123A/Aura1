@@ -124,7 +124,7 @@ void UAuraAttributeSet::SetEffectProperties(const FGameplayEffectModCallbackData
 	}
 }
 
-void UAuraAttributeSet::ShowFloatingText(const FEffectProperties& Props, float Damage, bool bBlockedHit,
+/*void UAuraAttributeSet::ShowFloatingText(const FEffectProperties& Props, float Damage, bool bBlockedHit,
 	bool bCriticalHit) const
 {
 	if (Props.SourceCharacter != Props.TargetCharacter)
@@ -138,7 +138,7 @@ void UAuraAttributeSet::ShowFloatingText(const FEffectProperties& Props, float D
 			//PC->ShowDamageNumber(Damage, Props.TargetCharacter, bBlockedHit, bCriticalHit);
 		}
 	}
-}
+}*/
 
 void UAuraAttributeSet::PostGameplayEffectExecute(const struct FGameplayEffectModCallbackData& Data)
 {
